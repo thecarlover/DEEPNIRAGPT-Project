@@ -3,11 +3,11 @@ import os
 
 import openai
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("OPENAI_API_KEY")  #your OPen AI secret Key
 
 
 
-token= os.getenv("SECRET_KEY")
+token= os.getenv("SECRET_KEY")  #discord bot key
 
 class MyClient(discord.Client):
     async def on_ready(self):
